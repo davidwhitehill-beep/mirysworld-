@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Miry’s World Swipe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="720" height="1280" aria-label="Miry’s World Swipe game canvas"></canvas>
+    <div id="hud">
+      <div class="pill"><span id="city">Los Angeles</span></div>
+      <div class="pill">Score: <span id="score">0</span></div>
+      <div class="pill">Lives: <span id="lives">3</span></div>
+    </div>
+
+    <div id="overlay" class="show">
+      <div class="card">
+        <h1 id="title">Miry’s World Swipe</h1>
+        <p id="subtitle">Swipe to dodge chaos, collect souvenirs, and keep the suitcase intact.</p>
+
+        <div class="howto">
+          <div>⬅️ Swipe left/right to change lanes</div>
+          <div>⬆️ Swipe up to “boost” (short invulnerability)</div>
+          <div>⬇️ Swipe down to “snack” (small heal if you have a food token)</div>
+        </div>
+
+        <div class="buttons">
+          <button id="startBtn">Start Trip</button>
+          <button id="muteBtn" class="ghost">Sound: On</button>
+        </div>
+
+        <small class="note">
+          Tip: On iOS, if there’s no sound, tap once after starting.
+        </small>
+      </div>
+    </div>
+
+    <div id="toast"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
